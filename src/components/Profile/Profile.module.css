@@ -1,4 +1,8 @@
 li{
+    list-style-type: none;
+}
+
+.cardlist{
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -12,8 +16,8 @@ li{
     flex-direction: column;
     align-items: center;
     border: 1px solid black;
-    background-color: rgba(252, 252, 252, 0.5);
-    width: 320px;
+    background-color: rgb(252, 252, 252);
+    /* width: 320px; */
 }
 
 
@@ -47,6 +51,7 @@ li{
     color: rgba(171, 167, 167, 0.5) ;
     font-size: 20px;
     text-align: center;
+    font-weight: bold;
 }
 
 .statsNumber{
@@ -54,17 +59,20 @@ li{
     text-align: center;
 }
 
-ul{
+.engage{
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: rgba(207, 200, 200, 0.5);
     margin: 0;
     padding-left: 0;
     padding-inline-start: 0;
-    width: 320px;
-    
 }
 
 .userInfo{
     margin: 20px 0px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
 }

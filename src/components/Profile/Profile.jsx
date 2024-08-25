@@ -9,6 +9,7 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
+    <div className={styles.container}>
     <div className={styles.card}>
       <img className={styles.profile} src={avatar} alt="user profile pic" />
       <div className={styles.userInfo}>
@@ -17,19 +18,20 @@ export const Profile = ({
       <p className={styles.location}>{location}</p>
       </div>
       <ul className={styles.engage}>
-        <li>
+        <li className = {styles.cardlist}>
           <span className={styles.statsName}>Followers</span>
           <span className={styles.statsNumber}>{followers}</span>
         </li>
-        <li>
+        <li className = {styles.cardlist} >
           <span className={styles.statsName}>Views</span>
           <span className={styles.statsNumber}>{views}</span>
         </li>
-        <li>
+        <li className = {styles.cardlist}>
           <span className={styles.statsName}>Likes</span>
           <span className={styles.statsNumber}>{likes}</span>
         </li>
       </ul>
+    </div>
     </div>
   );
 };
